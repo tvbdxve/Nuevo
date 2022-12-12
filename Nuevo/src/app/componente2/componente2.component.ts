@@ -8,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class Componente2Component implements OnInit {
 
   constructor() { }
+  resultado:any
+  mensaje:any
 
   ngOnInit(): void {
+    this.recuperar()
+  }
+  recuperar(){
+    this.resultado=localStorage.getItem('Nombre');
+    // this.suma=2+parseInt(this.resultado)
+    this.mensaje=localStorage.getItem('mensaje')
   }
 
 }
