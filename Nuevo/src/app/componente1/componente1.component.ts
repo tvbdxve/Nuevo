@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class Componente1Component implements OnInit {
 
   constructor() { }
+  numero:any=0;
+  sueldos=[1200, 1324, 1250];
 
   ngOnInit(): void {
+    this.numero=0;
   }
 
 }
