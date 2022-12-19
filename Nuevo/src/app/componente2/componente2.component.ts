@@ -8,16 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class Componente2Component implements OnInit {
 
   constructor() { }
-  resultado:any
-  mensaje:any
+  nombre:any
+  cedula:any
+  email:any
+  tarjeta:any
+  nt:any
 
   ngOnInit(): void {
     this.recuperar()
   }
   recuperar(){
-    this.resultado=localStorage.getItem('Nombre');
+    this.nombre=localStorage.getItem('Nombre');
     // this.suma=2+parseInt(this.resultado)
-    this.mensaje=localStorage.getItem('mensaje')
+    this.cedula=localStorage.getItem('Cédula');
+    this.email=localStorage.getItem('Email');
+    this.tarjeta=localStorage.getItem('Tarjeta de crédito');
+    this.nt=localStorage.getItem('Numero de teléfono');
   }
 
 }

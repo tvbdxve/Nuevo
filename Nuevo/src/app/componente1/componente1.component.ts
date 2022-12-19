@@ -25,6 +25,7 @@ export class Componente1Component implements OnInit {
     localStorage.setItem('Cédula', this.cdl.toString())
     localStorage.setItem('Email', this.ema)
     localStorage.setItem('Tarjeta de crédito', this.pass.toString())
+    localStorage.setItem('Numero de telefono', this.numt.toString())
     localStorage.setItem('mensaje', 'almacenamiento')
 
   }
